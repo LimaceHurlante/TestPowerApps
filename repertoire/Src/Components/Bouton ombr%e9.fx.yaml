@@ -389,7 +389,7 @@
         Height: =50
         Size: =13
         Text: |-
-            ="<div style='margin:"& Max(marge,(spreadRadius+blur)) &"px;width:"& largeur &"px;height:150px;background-color:#;box-shadow: "& x &" "& y &"px "& blur &"px "& spreadRadius &"px "& LaHex &"; border-radius:"& radius &"px'></div>"
+            ="<div style='margin:"& Max(marge,(spreadRadius+blur)) &"px;width:"& largeur &"px;height:150px;background-color:#;box-shadow: "& x &" "& y &"px "& blur &"px "& spreadRadius &"px #ccc; border-radius:"& radius &"px'></div>"
         Width: =Max(Parent.Width,1100)
         Y: =Parent.Height-20
         ZIndex: =4
