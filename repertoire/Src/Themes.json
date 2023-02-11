@@ -2621,15 +2621,15 @@
             },
             {
               "property": "RadiusTopLeft",
-              "value": "10"
+              "value": "0"
             },
             {
               "property": "RadiusBottomRight",
-              "value": "10"
+              "value": "0"
             },
             {
               "property": "RadiusTopRight",
-              "value": "10"
+              "value": "1"
             },
             {
               "property": "RadiusBottomLeft",
