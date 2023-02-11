@@ -27,7 +27,7 @@ Screen1 As screen:
         Y: =260
         ZIndex: =4
 
-    Button1 As button:
+    Button8 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)

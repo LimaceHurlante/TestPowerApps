@@ -1,0 +1,690 @@
+"'Bouton ombré' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =400
+    Width: =800
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Button5_1 As button:
+        BorderColor: =Black
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FontWeight: =FontWeight.Semibold
+        Height: =150
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(68, 57, 38, 1), -20%)
+        RadiusBottomLeft: =radius
+        RadiusBottomRight: =radius
+        RadiusTopLeft: =radius
+        RadiusTopRight: =radius
+        Size: =15
+        Text: ="Bouton"
+        Width: =largeur
+        X: =Max(marge,(spreadRadius+blur))+5
+        Y: =Max(marge,(spreadRadius+blur))+5
+        ZIndex: =1
+
+    Réglage As groupContainer:
+        Height: =640
+        Width: =379
+        X: =Parent.Width
+        ZIndex: =3
+
+        Rectangle_Couleur As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(204, 204, 204, 1)
+            X: =126
+            Y: =505
+            ZIndex: =13
+
+        Label4 As label:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: =LaHex
+            X: =121
+            Y: =465
+            ZIndex: =14
+
+        Icon2 As icon.Sync:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Color: =RGBA(119, 77, 3, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Icon: =Icon.Sync
+            OnSelect: |-
+                =Set(LaHex,
+                Left(
+                    Substitute(
+                        JSON(
+                            Rectangle_Couleur.Fill,
+                            JSONFormat.IgnoreUnsupportedTypes
+                        ),
+                        Char(34),
+                        ""
+                    )
+                ,7)    
+                )
+            X: =170
+            Y: =523
+            ZIndex: =15
+
+        Label5 As label:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =46
+            Size: =13
+            Text: ="De base le composant HTML met une bordure de 5 qui est à rajouter"
+            Width: =379
+            ZIndex: =16
+
+        Group4 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =17
+
+            radius As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =20
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =153
+                X: =130
+                Y: =264
+                ZIndex: =10
+
+            Label2_6 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Border radius"
+                Width: =79
+                X: =40
+                Y: =270
+                ZIndex: =11
+
+            Label2_7 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =radius.Value
+                Width: =74
+                X: =303
+                Y: =270
+                ZIndex: =12
+
+        Group5 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =17
+
+            marge As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =20
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =153
+                X: =132
+                Y: =46
+                ZIndex: =7
+
+            Label2_4 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Marge"
+                Width: =87
+                X: =42
+                Y: =52
+                ZIndex: =8
+
+            Label2_5 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =marge.Value
+                Width: =74
+                X: =305
+                Y: =52
+                ZIndex: =9
+
+        Group6 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =17
+
+            x As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =20
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =153
+                X: =130
+                Y: =368
+                ZIndex: =1
+
+            Label2 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="offset x"
+                Width: =74
+                X: =40
+                Y: =374
+                ZIndex: =2
+
+            Label2_1 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =x.Value
+                Width: =74
+                X: =303
+                Y: =374
+                ZIndex: =3
+
+        Group7 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =17
+
+            y As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =20
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =153
+                X: =130
+                Y: =316
+                ZIndex: =4
+
+            Label2_2 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="offset y"
+                Width: =74
+                X: =40
+                Y: =322
+                ZIndex: =5
+
+            Label2_3 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =y.Value
+                Width: =74
+                X: =303
+                Y: =322
+                ZIndex: =6
+
+        Group4_1 As group:
+            Height: =5
+            Width: =5
+            X: =20
+            Y: =-118
+            ZIndex: =20
+
+            largeur As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Default: =250
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =250
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =153
+                X: =132
+                Y: =109
+                ZIndex: =17
+
+            Label2_8 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="largeur"
+                Width: =79
+                X: =42
+                Y: =115
+                ZIndex: =18
+
+            Label2_9 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =largeur.Value
+                Width: =74
+                X: =305
+                Y: =115
+                ZIndex: =19
+
+        Group4_2 As group:
+            Height: =5
+            Width: =5
+            X: =20
+            Y: =-49
+            ZIndex: =23
+
+            blur As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Default: =20
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =20
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =153
+                X: =132
+                Y: =165
+                ZIndex: =20
+
+            Label2_10 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="blur"
+                Width: =79
+                X: =42
+                Y: =171
+                ZIndex: =21
+
+            Label2_11 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =blur.Value
+                Width: =74
+                X: =305
+                Y: =171
+                ZIndex: =22
+
+        Group4_3 As group:
+            Height: =5
+            Width: =5
+            X: =20
+            Y: =-105
+            ZIndex: =26
+
+            spreadRadius As slider:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Default: =20
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                HandleFill: =RGBA(255, 255, 255, 1)
+                Height: =52
+                Max: =20
+                RailFill: =RGBA(128, 130, 133, 1)
+                ValueFill: =RGBA(119, 77, 3, 1)
+                Width: =115
+                X: =170
+                Y: =218
+                ZIndex: =23
+
+            Label2_12 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="spreadRadius"
+                Width: =128
+                X: =42
+                Y: =224
+                ZIndex: =24
+
+            Label2_13 As label:
+                BorderColor: =RGBA(119, 77, 3, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =spreadRadius.Value
+                Width: =74
+                X: =305
+                Y: =224
+                ZIndex: =25
+
+    "'Requette Html' As label":
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(216, 226, 232, 1)
+        Height: =50
+        Size: =13
+        Text: |-
+            ="<div style='margin:"& Max(marge,(spreadRadius+blur)) &"px;width:"& largeur &"px;height:150px;background-color:#;box-shadow: "& x &" "& y &"px "& blur &"px "& spreadRadius &"px "& LaHex &"; border-radius:"& radius &"px'></div>"
+        Width: =Max(Parent.Width,1100)
+        Y: =Parent.Height-20
+        ZIndex: =4
+
+    "'Ombre HTML' As htmlViewer":
+        Height: =234
+        HtmlText: |-
+            ='Requette Html'.Text
+            /*"
+            <div style='
+                margin:10px;
+                width:190px;
+                height:150px;
+                background-color:#;
+                box-shadow:0 3px 6px 1px  "& LaHex &";
+                border-radius:15px'></div>"
+            
+                */
+        Width: =800
+        ZIndex: =6
+
+    Regle As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =38
+
+        Rectangle4_2 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =576
+            Y: =335
+            ZIndex: =7
+
+        Rectangle4_3 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =581
+            Y: =335
+            ZIndex: =8
+
+        Rectangle4_1 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =571
+            Y: =335
+            ZIndex: =9
+
+        Rectangle4 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =566
+            Y: =335
+            ZIndex: =10
+
+        Rectangle4_4 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =596
+            Y: =335
+            ZIndex: =11
+
+        Rectangle4_5 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =601
+            Y: =335
+            ZIndex: =12
+
+        Rectangle4_6 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =591
+            Y: =335
+            ZIndex: =13
+
+        Rectangle4_7 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =586
+            Y: =335
+            ZIndex: =14
+
+        Rectangle4_8 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =616
+            Y: =335
+            ZIndex: =15
+
+        Rectangle4_9 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =621
+            Y: =335
+            ZIndex: =16
+
+        Rectangle4_10 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =611
+            Y: =335
+            ZIndex: =17
+
+        Rectangle4_11 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =606
+            Y: =335
+            ZIndex: =18
+
+        Rectangle4_12 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =636
+            Y: =335
+            ZIndex: =19
+
+        Rectangle4_13 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =641
+            Y: =335
+            ZIndex: =20
+
+        Rectangle4_14 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =5
+            X: =631
+            Y: =335
+            ZIndex: =21
+
+        Rectangle4_15 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =5
+            X: =626
+            Y: =335
+            ZIndex: =22
+
+        Rectangle4_16 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =10
+            X: =566
+            Y: =330
+            ZIndex: =23
+
+        Rectangle4_17 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =10
+            X: =576
+            Y: =330
+            ZIndex: =24
+
+        Rectangle4_18 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =10
+            X: =586
+            Y: =330
+            ZIndex: =25
+
+        Rectangle4_19 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =10
+            X: =596
+            Y: =330
+            ZIndex: =26
+
+        Rectangle4_20 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =10
+            X: =606
+            Y: =330
+            ZIndex: =27
+
+        Rectangle4_21 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =10
+            X: =616
+            Y: =330
+            ZIndex: =28
+
+        Rectangle4_22 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =10
+            X: =626
+            Y: =330
+            ZIndex: =29
+
+        Rectangle4_23 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =10
+            X: =636
+            Y: =330
+            ZIndex: =30
+
+        Rectangle4_24 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =20
+            X: =566
+            Y: =325
+            ZIndex: =31
+
+        Rectangle4_26 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =20
+            X: =586
+            Y: =325
+            ZIndex: =33
+
+        Rectangle4_27 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =20
+            X: =606
+            Y: =325
+            ZIndex: =34
+
+        Rectangle4_28 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =20
+            X: =626
+            Y: =325
+            ZIndex: =35
+
+        Rectangle4_25 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(68, 57, 38, 1)
+            Height: =5
+            Width: =40
+            X: =566
+            Y: =320
+            ZIndex: =36
+
+        Rectangle4_29 As rectangle:
+            BorderColor: =RGBA(119, 77, 3, 1)
+            Fill: =RGBA(255, 236, 193, 1)
+            Height: =5
+            Width: =40
+            X: =606
+            Y: =320
+            ZIndex: =37
+

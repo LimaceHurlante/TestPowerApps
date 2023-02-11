@@ -1,5 +1,5 @@
 Screen3 As screen:
-    Fill: =RGBA(216, 226, 232, 1)
+    Fill: =White
     LoadingSpinnerColor: =RGBA(68, 57, 38, 1)
 
     Button5 As button:
@@ -19,8 +19,8 @@ Screen3 As screen:
         Size: =15
         Text: ="Bouton"
         Width: =190
-        X: =158
-        Y: =46
+        X: =467
+        Y: =67
         ZIndex: =1
 
     HtmlText1 As htmlViewer:

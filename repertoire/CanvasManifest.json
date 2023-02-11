@@ -30,7 +30,7 @@
       "enableappembeddingux": false,
       "enablebarcodereaderfeature": false,
       "enablecomponentnamemaps": false,
-      "enablecomponentscopeoldbehavior": false,
+      "enablecomponentscopeoldbehavior": true,
       "enableeditcacherefreshfrequency": false,
       "enableexcelonlinebusinessv2connector": true,
       "enableideaspanel": true,
