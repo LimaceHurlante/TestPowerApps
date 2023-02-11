@@ -337,6 +337,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_N_2.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_N_2.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_N_2",
+                "type": "Screen_N_2.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_N_2.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_N_2.Gallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_N_2",
+                "type": "Screen_N_2.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Capture d’écran 2022-11-06 165842"
                 }
               ],
@@ -360,7 +420,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 8
         }
       ],
       "tool": {
@@ -462,6 +522,40 @@
                 "level": "Low",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+              }
+            },
+            {
+              "id": "acc-AccessibleLabelNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing accessible label"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit the accessible label property to describe the item."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
+              }
+            },
+            {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             },
             {
