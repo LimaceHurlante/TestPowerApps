@@ -34,7 +34,7 @@ Screen1 As screen:
             ZIndex: =3
 
     Label1 As label:
-        Text: ="Texte123456789"
+        Text: ="Texte123456789!!!"
         X: =100
         Y: =260
         ZIndex: =4
