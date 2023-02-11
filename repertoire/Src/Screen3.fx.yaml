@@ -32,3 +32,8 @@ Screen3 As screen:
         Y: =46
         ZIndex: =2
 
+    "'Bouton ombré_1' As 'Bouton ombré'":
+        X: =288
+        Y: =272
+        ZIndex: =3
+
