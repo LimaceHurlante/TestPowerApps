@@ -7,35 +7,29 @@ Screen1 As screen:
         Y: =405
         ZIndex: =2
 
-    Container1 As groupContainer.manualLayoutContainer:
-        Height: =234
-        Width: =895
-        X: =40
-        Y: =40
-        ZIndex: =3
-
-        Button1 As button:
-            Text: ="Bouton"
-            X: =40
-            Y: =40
-            ZIndex: =1
-
-        Icon1 As icon.CancelBadge:
-            Icon: =Icon.CancelBadge
-            X: =356
-            Y: =40
-            ZIndex: =2
-
-        Masque_De_Chargement_1 As Masque_De_Chargement:
-            _eEnable: =Masque_De_Chargement_1.Visible
-            _eTailleDuTexte: |
-                =Masque_De_Chargement_1.Width/12
-            Visible: =chargement
-            ZIndex: =3
-
     Label1 As label:
-        Text: ="Texte123456789!!!"
+        Text: ="Texte!!!"
         X: =100
         Y: =260
         ZIndex: =4
+
+    Button1 As button:
+        Text: ="Bouton"
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+    Icon1 As icon.CancelBadge:
+        Icon: =Icon.CancelBadge
+        X: =356
+        Y: =40
+        ZIndex: =6
+
+    Masque_De_Chargement_1 As Masque_De_Chargement:
+        _eEnable: =Masque_De_Chargement_1.Visible
+        _eTailleDuTexte: |
+            =Masque_De_Chargement_1.Width/12
+        Fill: =White
+        Visible: =chargement
+        ZIndex: =7
 
