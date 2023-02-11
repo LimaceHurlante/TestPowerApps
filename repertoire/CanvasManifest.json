@@ -114,6 +114,7 @@
   },
   "ScreenOrder": [
     "Screen1",
-    "Screen_N_2"
+    "Screen_N_2",
+    "Screen2"
   ]
 }

@@ -1,0 +1,18 @@
+Screen2 As screen:
+    Fill: =DimGrey
+    LoadingSpinnerColor: =RGBA(68, 57, 38, 1)
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(68, 57, 38, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(68, 57, 38, 1), -20%)
+        Size: =15
+        Text: ="Bouton"
+        X: =365
+        Y: =140
+        ZIndex: =1
+
