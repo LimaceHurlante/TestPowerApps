@@ -1,0 +1,153 @@
+{
+  "ComponentIndexes": {
+    "Masque_De_Chargement": 1,
+    "Masque_De_Chargement_1": 1
+  },
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Button1": 21,
+    "Button4_1": 23,
+    "Container1": 19,
+    "Group1": 17,
+    "Icon1": 22,
+    "Image1": 4,
+    "Label3": 11,
+    "Masque_De_Chargement": 3,
+    "Masque_De_Chargement_1": 20,
+    "Rectangle2": 9,
+    "Rectangle2_1": 12,
+    "Rectangle2_2": 5,
+    "Rectangle2_3": 6,
+    "Rectangle2_4": 10,
+    "Rectangle2_5": 7,
+    "Rectangle2_6": 15,
+    "Rectangle2_7": 14,
+    "Rectangle3": 8,
+    "Screen1": 18,
+    "Timer_boucle_animation": 13,
+    "Timer_chronometre": 16
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "02/11/2023 14:46:11",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {
+    "Capture d’écran 2022-11-06 165842": "7f2e8d12-e5d3-4a47-b2cb-23a573132cae.png",
+    "EN1CLIC-LOGO2": "cbc6562f-a0e4-46ce-a583-431bdd46e9a0.jpg"
+  },
+  "LocalResourceRootPaths": {
+    "Capture d’écran 2022-11-06 165842": "https://docserverpwaprodneu.blob.core.windows.net/1d40e8af-147c-4195-b353-c1652055197b-1/resource/Assets0Images07f2e8d12-e5d3-4a47-b2cb-23a573132cae.png?sv=2018-03-28&sr=b&sig=HZPMCQJgbY4kyH81ipU7nUMglnMh6BAEzh%2Bwot7FYEM%3D&spr=https&se=2023-02-12T14%3A46%3A14Z&sp=r",
+    "EN1CLIC-LOGO2": "https://docserverpwaprodneu.blob.core.windows.net/1d40e8af-147c-4195-b353-c1652055197b-1/resource/Assets0Images0cbc6562f-a0e4-46ce-a583-431bdd46e9a0.jpg?sv=2018-03-28&sr=b&sig=B9HUKaZNv0iRVkIu%2BIIb5b%2FYLztPsxglBqm4cIYA5bw%3D&spr=https&se=2023-02-12T14%3A46%3A14Z&sp=r"
+  },
+  "OrderComponentMetadata": {
+    "c9de15ecdaf44854895a35feacc264ab": 0
+  },
+  "OrderComponentTemplate": {
+    "c9de15ecdaf44854895a35feacc264ab": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
+  "OrderGroupControls": {
+    "Group1": {
+      "Label3": 9,
+      "Rectangle2": 8,
+      "Rectangle2_1": 7,
+      "Rectangle2_2": 6,
+      "Rectangle2_3": 5,
+      "Rectangle2_4": 4,
+      "Rectangle2_5": 3,
+      "Rectangle2_6": 2,
+      "Rectangle2_7": 1,
+      "Rectangle3": 0
+    }
+  },
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 5,
+    "groupContainer": 0,
+    "icon": 6,
+    "image": 1,
+    "label": 3,
+    "rectangle": 2,
+    "timer": 4
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Button1": {},
+    "Button4_1": {},
+    "Container1": {},
+    "Group1": {},
+    "Icon1": {},
+    "Image1": {},
+    "Label3": {},
+    "Masque_De_Chargement": {},
+    "Masque_De_Chargement_1": {},
+    "Rectangle2": {},
+    "Rectangle2_1": {},
+    "Rectangle2_2": {},
+    "Rectangle2_3": {},
+    "Rectangle2_4": {},
+    "Rectangle2_5": {},
+    "Rectangle2_6": {},
+    "Rectangle2_7": {},
+    "Rectangle3": {},
+    "Screen1": {},
+    "Timer_boucle_animation": {},
+    "Timer_chronometre": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Button1": 2,
+    "Button4_1": 4,
+    "Container1": 0,
+    "Group1": 14,
+    "Icon1": 3,
+    "Image1": 5,
+    "Label3": 12,
+    "Masque_De_Chargement": 0,
+    "Masque_De_Chargement_1": 1,
+    "Rectangle2": 10,
+    "Rectangle2_1": 13,
+    "Rectangle2_2": 6,
+    "Rectangle2_3": 7,
+    "Rectangle2_4": 11,
+    "Rectangle2_5": 8,
+    "Rectangle2_6": 17,
+    "Rectangle2_7": 16,
+    "Rectangle3": 9,
+    "Screen1": 0,
+    "Timer_boucle_animation": 15,
+    "Timer_chronometre": 18
+  },
+  "ResourcesJsonIndices": {
+    "Image-Capture d’écran 2022-11-06 165842": 0,
+    "Image-EN1CLIC-LOGO2": 2,
+    "Image-SampleImage": 1
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1151282,
+    "ControlCount": {
+      "button": 2,
+      "c9de15ecdaf44854895a35feacc264ab": 2,
+      "group": 1,
+      "groupContainer": 1,
+      "icon": 1,
+      "image": 1,
+      "label": 1,
+      "rectangle": 9,
+      "screen": 1,
+      "timer": 2
+    },
+    "DeserializationLoadTime": 3.0859271,
+    "ErrorCount": 2
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

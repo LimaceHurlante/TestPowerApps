@@ -1,0 +1,156 @@
+Masque_De_Chargement As CanvasComponent:
+    _eAfficherMessageboxFinDeChargement: =false
+    _eAlignementTexte: =0
+    _eCouleurDesBarres: =RGBA(56, 96, 178, 1)
+    _eCouleurTexte: =RGBA(0, 0, 0, 1)
+    _eEnable: =Masque_De_Chargement.Visible
+    _eOpacitéDuMasquage: =40
+    _eTailleDuTexte: |
+        =Masque_De_Chargement.Width/12
+    _eTexte: ="Chargement..."
+    _eVitesseDeLanimation: =50
+    _sChronometre: =Timer_chronometre.Value
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =Parent.Height
+    OnReset: |-
+        =If(
+            And(
+                Masque_De_Chargement._eAfficherMessageboxFinDeChargement,
+                !Masque_De_Chargement._eEnable
+            ),
+            Notify(
+                Masque_De_Chargement.TexteMessageboxDeFin,
+                NotificationType.Success
+            )
+        )
+    TexteMessageboxDeFin: ="Chargement terminé"
+    Width: =Parent.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Timer_chronometre As timer:
+        AutoStart: =true
+        Duration: =If(Masque_De_Chargement.Visible,3600000,1)
+        OnTimerEnd: =
+        Start: =Masque_De_Chargement.Visible
+        X: =-200
+        Y: =300
+        ZIndex: =2
+
+    Timer_boucle_animation As timer:
+        AutoStart: =true
+        Duration: =1000//5000-(5000*(Masque_De_Chargement._eVitesseDeLanimation/100))
+        Repeat: =true
+        Start: |-
+            =Masque_De_Chargement.Visible
+            //demarrage
+        X: =-200
+        Y: =80
+        ZIndex: =3
+
+    Image1 As image:
+        Height: =123+0.1
+        Image: ='EN1CLIC-LOGO2'
+        ImagePosition: =ImagePosition.Center
+        Visible: =false
+        Width: =Min(Max((100 - Abs(Timer_boucle_animation.Value  - Timer_boucle_animation.Duration/2)) / Timer_boucle_animation.Duration/2 * 100, 0), 100)*Masque_De_Chargement.Width*0.8//298
+        X: =Masque_De_Chargement.Width/2-Self.Width/2
+        Y: =Masque_De_Chargement.Height/2-Self.Height/2
+        ZIndex: =13
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =13
+
+        Rectangle3 As rectangle:
+            Fill: =RGBA(230, 230, 230, Masque_De_Chargement._eOpacitéDuMasquage/100)
+            Height: =Masque_De_Chargement.Height
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =Masque_De_Chargement.Width
+            ZIndex: =1
+
+        Rectangle2 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =5
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =Masque_De_Chargement.Width/6
+            X: =Timer_boucle_animation.Value*((Masque_De_Chargement.Width+Self.Width*2)/Timer_boucle_animation.Duration)-Self.Width
+            ZIndex: =4
+
+        Rectangle2_1 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =5
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =Masque_De_Chargement.Width/6
+            X: =(Masque_De_Chargement.Width+Self.Width)-Timer_boucle_animation.Value*((Masque_De_Chargement.Width+Self.Width*2)/Timer_boucle_animation.Duration)-Self.Width
+            ZIndex: =5
+
+        Rectangle2_2 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =5
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =Masque_De_Chargement.Width/6
+            X: =Timer_boucle_animation.Value*((Masque_De_Chargement.Width+Self.Width*2)/Timer_boucle_animation.Duration)-Self.Width
+            Y: =Masque_De_Chargement.Height-Self.Height
+            ZIndex: =6
+
+        Rectangle2_3 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =5
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =Masque_De_Chargement.Width/6
+            X: =(Masque_De_Chargement.Width+Self.Width)-Timer_boucle_animation.Value*((Masque_De_Chargement.Width+Self.Width*2)/Timer_boucle_animation.Duration)-Self.Width
+            Y: =Masque_De_Chargement.Height-Self.Height
+            ZIndex: =7
+
+        Rectangle2_4 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =Masque_De_Chargement.Height/6
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =5
+            Y: =Timer_boucle_animation.Value*((Masque_De_Chargement.Height+Self.Height*2)/Timer_boucle_animation.Duration)-Self.Height
+            ZIndex: =8
+
+        Rectangle2_5 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =Masque_De_Chargement.Height/6
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =5
+            X: =Masque_De_Chargement.Width-Self.Width
+            Y: =Timer_boucle_animation.Value*((Masque_De_Chargement.Height+Self.Height*2)/Timer_boucle_animation.Duration)-Self.Height
+            ZIndex: =9
+
+        Rectangle2_6 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =Masque_De_Chargement.Height/6
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =5
+            Y: =(Masque_De_Chargement.Height+Self.Height)-Timer_boucle_animation.Value*((Masque_De_Chargement.Height+Self.Height*2)/Timer_boucle_animation.Duration)-Self.Height
+            ZIndex: =10
+
+        Rectangle2_7 As rectangle:
+            Fill: =Masque_De_Chargement._eCouleurDesBarres
+            Height: =Masque_De_Chargement.Height/6
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =5
+            X: =Masque_De_Chargement.Width-Self.Width
+            Y: =(Masque_De_Chargement.Height+Self.Height)-Timer_boucle_animation.Value*((Masque_De_Chargement.Height+Self.Height*2)/Timer_boucle_animation.Duration)-Self.Height
+            ZIndex: =11
+
+        Label3 As label:
+            Align: =Align.Center
+            Color: =Masque_De_Chargement._eCouleurTexte
+            Fill: =RGBA(0,0,0,0)
+            Height: =Masque_De_Chargement.Height
+            Size: =Masque_De_Chargement._eTailleDuTexte
+            Text: =Masque_De_Chargement._eTexte
+            VerticalAlign: =Switch(Masque_De_Chargement._eAlignementTexte,0,VerticalAlign.Middle,1,VerticalAlign.Top,-1,VerticalAlign.Bottom)
+            Visible: =Masque_De_Chargement._eEnable
+            Width: =Masque_De_Chargement.Width
+            X: =Masque_De_Chargement.Width/2-Self.Width/2
+            ZIndex: =12
+
