@@ -396,18 +396,7 @@
 
     "'Ombre HTML' As htmlViewer":
         Height: =234
-        HtmlText: |-
-            ='Requette Html'.Text
-            /*"
-            <div style='
-                margin:10px;
-                width:190px;
-                height:150px;
-                background-color:#;
-                box-shadow:0 3px 6px 1px  "& LaHex &";
-                border-radius:15px'></div>"
-            
-                */
+        HtmlText: ='Requette Html'.Text
         Width: =800
         ZIndex: =6
 
