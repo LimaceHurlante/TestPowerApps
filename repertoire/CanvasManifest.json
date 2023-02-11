@@ -98,11 +98,11 @@
     "Id": "704620c8-6fe0-4968-a7b1-2d6613a50af7",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Test_Composants2",
+    "Name": "Test_GIT",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "Test_Composants2",
+    "AppName": "Test_GIT",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
