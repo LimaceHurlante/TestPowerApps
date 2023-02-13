@@ -19,7 +19,7 @@ Screen3 As screen:
         Size: =15
         Text: ="Bouton"
         Width: =190
-        X: =467
+        X: =562
         Y: =67
         ZIndex: =1
 
