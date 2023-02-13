@@ -1,1 +1,27 @@
-{}
+{
+  "9d78b5d8-f9ac-47be-a613-05fb84ebf707": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://en1clic01.sharepoint.com/sites/Portofolio_E1C": {
+        "dataSources": {
+          "BDD_EAD_23": {
+            "tableName": "9e26b754-ba4c-4bb2-a672-b82ffa7c0ec7"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BDD_EAD_23"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9d78b5d8-f9ac-47be-a613-05fb84ebf707"
+  }
+}
