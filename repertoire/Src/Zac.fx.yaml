@@ -1,0 +1,59 @@
+Zac As screen:
+    Fill: =RGBA(216, 226, 232, 1)
+    LoadingSpinnerColor: =RGBA(68, 57, 38, 1)
+
+    Label6_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(247, 249, 250, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(151, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =116
+        Size: =20
+        Text: ="Page à modifier par Zac"
+        Width: =528
+        X: =428
+        Y: =8
+        ZIndex: =1
+
+    Icon3_1 As icon.Home:
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(119, 77, 3, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Home
+        X: =276
+        Y: =268
+        ZIndex: =2
+
+    Icon4_1 As icon.Alarm:
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(119, 77, 3, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Alarm
+        X: =276
+        Y: =365
+        ZIndex: =3
+
+    Label7_2 As label:
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Texte 1"
+        X: =398
+        Y: =280
+        ZIndex: =4
+
+    Label7_3 As label:
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Texte 2"
+        X: =398
+        Y: =365
+        ZIndex: =5
+

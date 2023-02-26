@@ -46,7 +46,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Bouton ombré_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -426,7 +426,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button68",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -715,7 +715,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HtmlText1",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
