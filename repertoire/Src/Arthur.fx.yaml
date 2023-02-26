@@ -28,6 +28,7 @@ Arthur As screen:
         ZIndex: =2
 
     Icon4 As icon.Alarm:
+        ContentLanguage: ="JeMetCeQueJeVEux"
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(119, 77, 3, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
