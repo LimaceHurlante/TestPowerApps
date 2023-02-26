@@ -40,6 +40,7 @@ Arthur As screen:
     Label7 As label:
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(0, 0, 0, 1)
+        ContentLanguage: ="JeMetCeQueJeVEux"
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
         Text: ="Texte 1"
