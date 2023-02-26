@@ -53,6 +53,7 @@ Git As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
         Text: ="Texte 2"
+        Tooltip: =Self.X
         X: =398
         Y: =365
         ZIndex: =5
