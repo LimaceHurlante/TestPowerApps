@@ -12,6 +12,7 @@ Git As screen:
         Height: =116
         Size: =20
         Text: ="Page à modifier par Git"
+        Tooltip: =Self.X
         Width: =528
         X: =428
         Y: =8
@@ -43,6 +44,7 @@ Git As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
         Text: ="Texte 1"
+        Tooltip: =Self.X
         X: =398
         Y: =280
         ZIndex: =4
