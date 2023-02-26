@@ -57,6 +57,6 @@ Git As screen:
         Text: ="Texte 2"
         Tooltip: =Self.X
         X: =398
-        Y: =365
+        Y: =429
         ZIndex: =5
 
