@@ -117,12 +117,12 @@
     "UserLocale": "fr-FR"
   },
   "ScreenOrder": [
+    "Arthur",
+    "Zac",
+    "Git",
     "Screen1",
     "Screen_N_2",
     "Screen2",
-    "Screen3",
-    "Arthur",
-    "Zac",
-    "Git"
+    "Screen3"
   ]
 }
