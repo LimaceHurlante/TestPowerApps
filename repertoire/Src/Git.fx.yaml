@@ -57,13 +57,3 @@ Git As screen:
         Y: =365
         ZIndex: =5
 
-    Label7_6 As label:
-        BorderColor: =RGBA(119, 77, 3, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="Texte git"
-        X: =398+100
-        Y: =365
-        ZIndex: =5
-
