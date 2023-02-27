@@ -35,7 +35,7 @@ Arthur As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Alarm
         OnSelect: =Set(A_Test,true)
-        X: =276
+        X: =327
         Y: =365
         ZIndex: =3
 
@@ -45,8 +45,8 @@ Arthur As screen:
         ContentLanguage: ="JeMetCeQueJeVEux"
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
-        Text: ="Test 1"
-        X: =398
+        Text: ="If you go to rio"
+        X: =598
         Y: =280
         ZIndex: =4
 
@@ -54,9 +54,12 @@ Arthur As screen:
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="Test 2"
-        X: =398
-        Y: =365
+        FontWeight: =FontWeight.Bold
+        Height: =76
+        Size: =15
+        Text: ="Don't forget to go up there"
+        Width: =380
+        X: =619
+        Y: =353
         ZIndex: =5
 
