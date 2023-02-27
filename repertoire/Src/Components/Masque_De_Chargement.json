@@ -101,7 +101,7 @@
         "Name": "Image1",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 102,
+        "PublishOrderIndex": 72,
         "Rules": [
           {
             "Category": "Data",
@@ -362,7 +362,7 @@
         "Name": "Rectangle2_2",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 103,
+        "PublishOrderIndex": 73,
         "Rules": [
           {
             "Category": "Design",
@@ -539,7 +539,7 @@
         "Name": "Rectangle2_3",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 104,
+        "PublishOrderIndex": 74,
         "Rules": [
           {
             "Category": "Design",
@@ -723,7 +723,7 @@
         "Name": "Rectangle2_5",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 105,
+        "PublishOrderIndex": 75,
         "Rules": [
           {
             "Category": "Design",
@@ -907,7 +907,7 @@
         "Name": "Rectangle2_7",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 106,
+        "PublishOrderIndex": 76,
         "Rules": [
           {
             "Category": "Design",
@@ -1063,7 +1063,7 @@
         "Name": "Rectangle3",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 107,
+        "PublishOrderIndex": 77,
         "Rules": [
           {
             "Category": "Design",
@@ -1233,7 +1233,7 @@
         "Name": "Rectangle2",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 108,
+        "PublishOrderIndex": 78,
         "Rules": [
           {
             "Category": "Design",
@@ -1403,7 +1403,7 @@
         "Name": "Rectangle2_1",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 109,
+        "PublishOrderIndex": 79,
         "Rules": [
           {
             "Category": "Design",
@@ -1587,7 +1587,7 @@
         "Name": "Rectangle2_4",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 110,
+        "PublishOrderIndex": 80,
         "Rules": [
           {
             "Category": "Design",
@@ -1771,7 +1771,7 @@
         "Name": "Rectangle2_6",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 111,
+        "PublishOrderIndex": 81,
         "Rules": [
           {
             "Category": "Design",
@@ -1973,7 +1973,7 @@
         "Name": "Label3",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 112,
+        "PublishOrderIndex": 82,
         "Rules": [
           {
             "Category": "Data",
@@ -2331,7 +2331,7 @@
         "Name": "Timer_boucle_animation",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 114,
+        "PublishOrderIndex": 83,
         "Rules": [
           {
             "Category": "Data",
@@ -2641,7 +2641,7 @@
         "Name": "Timer_chronometre",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 115,
+        "PublishOrderIndex": 84,
         "Rules": [
           {
             "Category": "Data",
@@ -2893,7 +2893,7 @@
         "Name": "Group1",
         "Parent": "Masque_De_Chargement",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 113,
+        "PublishOrderIndex": 85,
         "Rules": [
           {
             "Category": "Design",
@@ -3040,7 +3040,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638131072956737579",
+    "LastModifiedTimestamp": "638131074681946228",
     "Name": "Masque_De_Chargement",
     "Rules": [
       {
@@ -3275,7 +3275,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638131072956737579",
+  "LastModifiedTimestamp": "638131074681946228",
   "Name": "c9de15ecdaf44854895a35feacc264ab",
   "OverridableProperties": {},
   "TemplateOriginalName": "311c5c1948a44094b7941aea8aab2170",
