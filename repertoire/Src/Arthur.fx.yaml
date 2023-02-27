@@ -45,8 +45,8 @@ Arthur As screen:
         ContentLanguage: ="JeMetCeQueJeVEux"
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
-        Text: ="Test"
-        X: =530
+        Text: ="Test 1"
+        X: =398
         Y: =280
         ZIndex: =4
 
@@ -55,7 +55,7 @@ Arthur As screen:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
-        Text: ="If you go to rio"
+        Text: ="Test 2"
         X: =398
         Y: =365
         ZIndex: =5
