@@ -1,8 +1,10 @@
 Zac As screen:
+    Tooltip: "Zac"
     Fill: =RGBA(216, 226, 232, 1)
     LoadingSpinnerColor: =RGBA(68, 57, 38, 1)
 
     Label6_1 As label:
+        Tooltip: "Label6_1"
         Align: =Align.Center
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(247, 249, 250, 1)
@@ -18,6 +20,7 @@ Zac As screen:
         ZIndex: =1
 
     Icon3_1 As icon.Home:
+        Tooltip: "Icon3_1"
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(119, 77, 3, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -28,6 +31,7 @@ Zac As screen:
         ZIndex: =2
 
     Icon4_1 As icon.Alarm:
+        Tooltip: "Icon4_1"
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(119, 77, 3, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -38,6 +42,7 @@ Zac As screen:
         ZIndex: =3
 
     Label7_2 As label:
+        Tooltip: "Label7_2"
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -48,6 +53,7 @@ Zac As screen:
         ZIndex: =4
 
     Label7_3 As label:
+        Tooltip: "Label7_3"
         BorderColor: =RGBA(119, 77, 3, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
