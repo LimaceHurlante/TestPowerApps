@@ -11,7 +11,7 @@ Zac As screen:
         FontWeight: =FontWeight.Bold
         Height: =116
         Size: =20
-        Text: ="Page à modifier par Zac"
+        Text: ="Page à modifier par Zac !"
         Width: =528
         X: =428
         Y: =8
